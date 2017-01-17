@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quadruple Jeopardy!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Voltaire" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Quadruple Jeopardy!</h1>
+            <h3>Unlicensed for your enjoyment...</h3>
+            <br>
+            <button type="button" class="btn btn-dark btn-lg splashbuttons" data-toggle="modal" data-target="#exampleModal" data-whatever="newGame">Start a New Game</button>
+            <button type="button" class="btn btn-dark btn-lg splashbuttons" data-toggle="modal" data-target="#exampleModal" data-whatever="challenge">Challenge a Leader</button>
+        </div>
+    </header>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="user-name" class="form-control-label">Your Name:</label>
+            <input type="text" class="form-control" id="user-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="jeopardy-board\index.html"><button type="button" class="btn btn-primary">Start Game</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
