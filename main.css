@@ -1,0 +1,126 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, #pageWrapper, #board {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #15006f;
+}
+
+#board {
+  overflow: hidden;
+  border: 0.3vw solid black;
+}
+
+#pageWrapper {
+}
+
+.category {
+  float: left;
+  width: 19.88vw;
+  height: 100%;
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.category > li {
+  height: 16.66%;
+  background-color: #15006f;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  text-transform: uppercase;
+  text-align: center;
+  border: 0.1vw solid black;
+}
+
+.show-amount:hover {
+  border-color: #d0aa54;
+  cursor: pointer;
+}
+
+.category > li.category-name {
+  font-size: 2vw;
+  border-bottom: 0.3vw solid black;
+}
+
+.clue-tile span {
+  position: relative;
+  opacity: 0;
+}
+
+.show-amount .amount,
+.show-clue .clue,
+.show-answer .answer {
+    z-index: 3;
+    opacity: 1;
+}
+
+.clue-tile.show-amount {
+  transform: translateZ(0); /* http://stackoverflow.com/a/15203880 */
+}
+
+.show-clue .clue,
+.show-answer .answer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #15006f;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-clue .clue {
+  transition: opacity .5s;
+}
+
+.amount {
+  color: #d0aa54;
+  font-size: 5vw;
+  font-family: impact;
+  text-shadow: 0.5vw 0.4vw black;
+}
+
+.clue {
+  width: 0;
+  height: 0;
+  font-size: 5vw;
+  transform-origin: 0 0;
+}
+
+.answer {
+  width: 0;
+  height: 0;
+  font-size: 5vw;
+}
+
+#reset {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(181, 56, 56);
+  font-style: italic;
+  opacity: 0; 
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#reset:hover {
+  opacity: 1;
+  transition: opacity .5s;
+}

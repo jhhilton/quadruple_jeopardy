@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>Quadruple Jeopardy!</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="pageWrapper">
+        <div id="board">
+            <ul class="category">
+                <li class="category-name"></li>
+                <li class="clue-tile show-amount" data-category="General Knowledge" data-category-index="0"><span class="amount">$200</span><span class="clue"></span><span class="answer"></span><span class="incorrect1" style="display:none"></span><span class="incorrect2" style="display:none"></span><span class="incorrect3" style="display:none"></span></li>
+                <li class="clue-tile show-amount" data-category="General Knowledge" data-category-index="1"><span class="amount">$400</span><span class="clue"></span><span class="answer"></span><span class="incorrect1" style="display:none"></span><span class="incorrect2" style="display:none"></span><span class="incorrect3" style="display:none"></span></li>
+                <li class="clue-tile show-amount" data-category="General Knowledge" data-category-index="2"><span class="amount">$600</span><span class="clue"></span><span class="answer"></span><span class="incorrect1" style="display:none"></span><span class="incorrect2" style="display:none"></span><span class="incorrect3" style="display:none"></span></li>
+                <li class="clue-tile show-amount" data-category="General Knowledge" data-category-index="3"><span class="amount">$800</span><span class="clue"></span><span class="answer"></span><span class="incorrect1" style="display:none"></span><span class="incorrect2" style="display:none"></span><span class="incorrect3" style="display:none"></span></li>
+                <li class="clue-tile show-amount" data-category="General Knowledge" data-category-index="4"><span class="amount">$1000</span><span class="clue"></span><span class="answer"></span><span class="incorrect1" style="display:none"></span><span class="incorrect2" style="display:none"></span><span class="incorrect3" style="display:none"></span></li>
+            </ul>
+            <ul class="category">
+                <li class="category-name">Geography</li>
+                <li class="clue-tile show-amount" data-category="Geography" data-category-index="0"><span class="amount">$200</span><span class="clue">Jack and Jill went up the hill to fetch __________</span><span class="answer">What is a 'Pail Of Water' ?</span></li>
+                <li class="clue-tile show-amount" data-category="Geography" data-category-index="1"><span class="amount">$400</span><span class="clue">wagging their tails behind them.</span><span class="answer">What is 'Little Boy Peep' ?</span></li>
+                <li class="clue-tile show-amount" data-category="Geography" data-category-index="2"><span class="amount">$600</span><span class="clue">Something that all the kings horses and men could not do.</span><span class="answer">What is 'Put Humpty together again' ?</span></li>
+                <li class="clue-tile show-amount" data-category="Geography" data-category-index="3"><span class="amount">$800</span><span class="clue">the little dog laughed to see such a sport</span><span class="answer">What is 'Hey Diddle Diddle' ?</span></li>
+                <li class="clue-tile show-amount" data-category="Geography" data-category-index="4"><span class="amount">$1000</span><span class="clue">Jack's mother used this to fix his crown</span><span class="answer">What is Vinegar and brown paper?</span></li>
+            </ul>
+            <ul class="category">
+                <li class="category-name">Politics</li>
+                <li class="clue-tile show-amount" data-category="Politics" data-category-index="0"><span class="amount">$200</span><span class="clue">Contractions every 4-5 minutes for 1-2 hours, or water breaks</span><span class="answer">When is it time to go to the hospital?</span></li>
+                <li class="clue-tile show-amount" data-category="Politics" data-category-index="1"><span class="amount">$400</span><span class="clue">Babies are born without this body part.</span><span class="answer">What are knee caps?</span></li>
+                <li class="clue-tile show-amount" data-category="Politics" data-category-index="2"><span class="amount">$600</span><span class="clue">First of the five senses to develop.</span><span class="answer">What is hearing?</span></li>
+                <li class="clue-tile show-amount" data-category="Politics" data-category-index="3"><span class="amount">$800</span><span class="clue">Babies heads are_____________the size of their bodies at birth.</span><span class="answer">What is 'one quarter' ?</span></li>
+                <li class="clue-tile show-amount" data-category="Politics" data-category-index="4"><span class="amount">$1000</span><span class="clue">Pregnant women should avoid deli style lunch meats because of this bacteria</span><span class="answer">What is Listeria?</span></li>
+            </ul>
+            <ul class="category">
+                <li class="category-name">Art</li>
+                <li class="clue-tile show-amount" data-category="Art" data-category-index="0"><span class="amount">$200</span><span class="clue">Family of fish</span><span class="answer">What is a school?</span></li>
+                <li class="clue-tile show-amount" data-category="Art" data-category-index="1"><span class="amount">$400</span><span class="clue">Family of wolves</span><span class="answer">What is a pack?</span></li>
+                <li class="clue-tile show-amount" data-category="Art" data-category-index="2"><span class="amount">$600</span><span class="clue">Family of elephants</span><span class="answer">What is a herd?</span></li>
+                <li class="clue-tile show-amount" data-category="Art" data-category-index="3"><span class="amount">$800</span><span class="clue">Family of lions</span><span class="answer">What is a pride?</span></li>
+                <li class="clue-tile show-amount" data-category="Art" data-category-index="4"><span class="amount">$1000</span><span class="clue">Family of geese</span><span class="answer">What is a gaggle?</span></li>
+            </ul>
+            <ul class="category">
+                <li class="category-name">Celebrities</li>
+                <li class="clue-tile show-amount" data-category="Celebrities" data-category-index="0"><span class="amount">$200</span><span class="clue">Name 1 of the 3 kids on The Simpsons</span><span class="answer">Who is Bart, Maggie or Lisa?</span></li>
+                <li class="clue-tile show-amount" data-category="Celebrities" data-category-index="1"><span class="amount">$400</span><span class="clue">Name 3 of the 6 Brady Bunch kids</span><span class="answer">Who are Marcia, Jan, Cindy, Greg, Peter, or Bobby?</span></li>
+                <li class="clue-tile show-amount" data-category="Celebrities" data-category-index="2"><span class="amount">$600</span><span class="clue">Name Fred and Wilma's child on The Flintstones</span><span class="answer">Who is Pebbles?</span></li>
+                <li class="clue-tile show-amount" data-category="Celebrities" data-category-index="3"><span class="amount">$800</span><span class="clue">Name 1 of Ross Gellar's kids on Friends</span><span class="answer">Who are Ben or Emma?</span></li>
+                <li class="clue-tile show-amount" data-category="Celebrities" data-category-index="4"><span class="amount">$1000</span><span class="clue">Name 2 of the 5 Huxtable kids on The Cosby Show</span><span class="answer">Who are Sondra, Denise, Theo, Vanessa or Rudy?</span></li>
+            </ul>
+        </div><a href="#" id="reset">Reset the game?</a>
+    </div>
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+
+    <script>
+
+    var categoryNo = 9;
+    
+    function fetch(smth) {
+          $(".category-name").eq(0).text(smth.results[0].category);
+
+for(i=0; i<=4; i++){
+
+          $(".clue").eq(i).html(smth.results[i].question);
+          $(".answer").eq(i).html(smth.results[i].correct_answer);
+            $(".incorrect1").eq(i).html(smth.results[i].incorrect_answers[0]);
+            $(".incorrect2").eq(i).html(smth.results[i].incorrect_answers[1]);
+            $(".incorrect3").eq(i).html(smth.results[i].incorrect_answers[2]);
+
+}
+
+    }
+
+    $(function () {
+        $.ajax({
+            url: 'https://opentdb.com/api.php?amount=5&category=' + categoryNo + '&type=multiple',
+            method: "GET",
+            success: function (getResults) {
+                fetch(getResults);
+            }
+        });
+    });
+
+</script>
+
+
+    <!--         <script src="data.js"></script>
+        <script src="app.js"></script> -->
+</body>
+</html>
